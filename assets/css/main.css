@@ -1096,7 +1096,7 @@ select {
 }
 
 .pt-160 {
-  padding-top: 160px;
+  padding-top: 80px;
 }
 
 .pt-165 {
@@ -1288,9 +1288,7 @@ select {
   padding-bottom: 195px;
 }
 
-.pb-200 {
-  padding-bottom: 200px;
-}
+
 
 /*-- Padding Left --*/
 .pl-5 {
