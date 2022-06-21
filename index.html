@@ -24,6 +24,40 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
     <link rel="stylesheet" href="assets/css/default.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+  
+  @media (max-width: 1400px) 
+  {
+    #service{
+      display: none;
+          }
+    #how-we-work{
+      display:flex;
+      flex-direction: row;
+      overflow-x: auto;
+      flex-wrap: auto !important;
+    }
+  }
+  .row1 {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2)
+}
+
+.row1 > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    margin-top: var(--bs-gutter-y)
+}
+   </style>
   </head>
 
   <body>
@@ -326,8 +360,8 @@
       <!-- hero area end here -->
 
       <!-- feature area start here -->
-      <section class="tp-feature-area-three pt-115 pb-80">
-        <div class="container">
+      <section class="tp-feature-area-three pt-115 pb-80" >
+        <div class="container" >
           <div class="row">
             <div class="col-12">
               <div
@@ -343,7 +377,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row1" id="how-we-work">
             <div class="col-xl-3 col-sm-6">
               <div
                 class="tp-feature-three text-center mb-30 wow fadeInUp"
@@ -545,7 +579,7 @@
       <!-- service area start here -->
       <section class="tp-service-area-three pb-200 bg-gray-light">
         <div class="container">
-          <div class="row">
+          <div class="row" >
             <div class="col-12">
               <div
                 class="section-title-wrapper text-center mb-55 wow fadeInUp"
@@ -560,7 +594,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row1" id="how-we-work">
             <div class="col-lg-6">
               <div
                 class="tp-service-three mb-30 wow fadeInUp"
@@ -581,7 +615,7 @@
                   <h4 class="tp-service-three-title mb-20">
                     <a href="dry-waste.html">Dry Waste Collection</a>
                   </h4>
-                  <p class="mb-30">
+                  <p class="mb-30" id="service">
                     Buscipit tincidunt duis antino gravidia nam tellusy nascetur
                     neque vulpuits aenean is scelerisque ultrces muscle mass and
                     matter order commo
@@ -615,7 +649,7 @@
                       >E-Waste Collection</a
                     >
                   </h4>
-                  <p class="mb-30">
+                  <p class="mb-30" id="service">
                     Buscipit tincidunt duis antino gravidia nam tellusy nascetur
                     neque vulpuits aenean is scelerisque ultrces muscle mass and
                     matter order commo
@@ -649,7 +683,7 @@
                       >Construction Waste Collection</a
                     >
                   </h4>
-                  <p class="mb-30">
+                  <p class="mb-30" id="service">
                     Buscipit tincidunt duis antino gravidia nam tellusy nascetur
                     neque vulpuits aenean is scelerisque ultrces muscle mass and
                     matter order commo
@@ -681,7 +715,7 @@
                   <h4 class="tp-service-three-title mb-20">
                     <a href="industrial-waste.html">Industrial Waste Collection</a>
                   </h4>
-                  <p class="mb-30">
+                  <p class="mb-30" id="service">
                     Buscipit tincidunt duis antino gravidia nam tellusy nascetur
                     neque vulpuits aenean is scelerisque ultrces muscle mass and
                     matter order commo
