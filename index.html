@@ -38,8 +38,7 @@
       overflow-x: auto;
       flex-wrap: auto !important;
     }
-  }
-  .row1 {
+    .row1 {
     --bs-gutter-x: 30px;
     --bs-gutter-y: 0;
     display: flex;
@@ -57,6 +56,89 @@
     padding-left: calc(var(--bs-gutter-x)/ 2);
     margin-top: var(--bs-gutter-y)
 }
+  }
+
+  @media (min-width: 1400px) 
+  {
+  .row1 {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2)
+}}
+
+#myInput {
+font-size: 16px;
+padding: 1rem;
+border: 0px solid #ddd;
+margin-bottom: 12px;
+background-color: transparent;
+}
+
+#myUL {
+list-style-type: none;
+padding: 1rem;
+margin:0;
+}
+
+#myUL li a {
+
+margin-top: 1rem; /* Prevent double borders */  
+padding: 12px;
+width:25rem;
+text-decoration: none;
+font-size: 18px;
+color: black;
+display: flex;
+justify-content: space-around;
+}
+
+#myUL li{
+display: flex;
+border: 1px solid #ddd;
+justify-content: space-around;
+width:25rem;
+margin-top: 0.75rem;
+}
+
+#myUL li a:hover:not(.header) {
+background-color: #eee;
+}
+
+
+.search-container {
+  width: 80%;
+  height: auto;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container:before {
+  content: "";
+
+
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
+  
    </style>
   </head>
 
@@ -253,7 +335,7 @@
               ></div>
               <div class="slider-img-three">
                 <img
-                  src="assets/img/slider/slider-img-2.png"
+                  src="assets/img/slider/slider-img-31.png"
                   class="img-fluid"
                   alt="img not found"
                 />
@@ -393,7 +475,7 @@
                 </div>
                 <div class="tp-feature-three-text">
                   <h4 class="tp-feature-three-title mb-20">
-                    <a href="project-details.html">Book Online</a>
+                    <a href="#">Book Online</a>
                   </h4>
                   <p>
                     Coingue aten lorem consqua interdum pretium ligaula a semper
@@ -417,7 +499,7 @@
                 </div>
                 <div class="tp-feature-three-text">
                   <h4 class="tp-feature-three-title mb-20">
-                    <a href="project-details.html">Receive Confirmation</a>
+                    <a href="#">Receive Confirmation</a>
                   </h4>
                   <p>
                     Coingue aten lorem consqua interdum pretium ligaula a semper
@@ -441,7 +523,7 @@
                 </div>
                 <div class="tp-feature-three-text">
                   <h4 class="tp-feature-three-title mb-20">
-                    <a href="project-details.html">Agent Arrives</a>
+                    <a href="#">Agent Arrives</a>
                   </h4>
                   <p>
                     Coingue aten lorem consqua interdum pretium ligaula a semper
@@ -465,7 +547,7 @@
                 </div>
                 <div class="tp-feature-three-text">
                   <h4 class="tp-feature-three-title mb-20">
-                    <a href="project-details.html">Garbage is Collected</a>
+                    <a href="#">Garbage is Collected</a>
                   </h4>
                   <p>
                     Coingue aten lorem consqua interdum pretium ligaula a semper
@@ -536,7 +618,7 @@
                       </div>
                       <div class="tp-about-service-text">
                         <h4 class="tp-about-service-text-title mb-15">
-                          <a href="service.html"
+                          <a href="#"
                             >Residential Garbage Collection Services</a
                           >
                         </h4>
@@ -556,7 +638,7 @@
                       </div>
                       <div class="tp-about-service-text">
                         <h4 class="tp-about-service-text-title mb-15">
-                          <a href="service.html"
+                          <a href="#"
                             >Commercial Garbage Collection Services</a
                           >
                         </h4>
@@ -733,245 +815,72 @@
       </section>
       <!-- service area end here -->
 
-      <!-- testimonial area start here -->
-      <!-- <section class="tp-testimonial-area-three pt-115 pb-190 bg-gray-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-title-wrapper text-center mb-55">
-                <h5 class="tp-section-subtitle-three mb-20">
-                  - - Customer Feedback - -
-                </h5>
-                <h2 class="tp-section-title-two color-theme-blue">
-                  Quality Cleaning Making <br />you Much Happy
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="tp-testimonial-three-shadow common-dots">
-            <div class="tp-testimonial-three-active swiper-container">
-              <div class="swiper-wrapper">
-                <div class="tp-testimonial-two position-relative swiper-slide">
-                  <div class="tp-testimonial-two-author mb-20">
-                    <div class="tp-testimonial-two-author-img">
-                      <img
-                        src="assets/img/testimonial/author-2.png"
-                        class="img-fluid"
-                        alt="img not found"
-                      />
-                    </div>
-                    <div class="tp-testimonial-two-author-text">
-                      <span>Senior Designer</span>
-                      <h4 class="tp-testimonial-two-name">Petar Mansion</h4>
-                    </div>
-                  </div>
-                  <p>
-                    Hymenaeos rhoncus proin aliquam justo sum mauris rutrum
-                    nulam semper purus rutru non sociis libero varius cumer to
-                    duine felis enisa porta ridiculus nisl acequis.
-                  </p>
-                  <div class="tp-testimonial-two-qoute">
-                    <i class="fal fa-quote-left"></i>
-                  </div>
-                </div>
-                <div class="tp-testimonial-two position-relative swiper-slide">
-                  <div class="tp-testimonial-two-author mb-20">
-                    <div class="tp-testimonial-two-author-img">
-                      <img
-                        src="assets/img/testimonial/author-3.png"
-                        class="img-fluid"
-                        alt="img not found"
-                      />
-                    </div>
-                    <div class="tp-testimonial-two-author-text">
-                      <span>Senior Developer</span>
-                      <h4 class="tp-testimonial-two-name">Jhon Doe</h4>
-                    </div>
-                  </div>
-                  <p>
-                    Hymenaeos rhoncus proin aliquam justo sum mauris rutrum
-                    nulam semper purus rutru non sociis libero varius cumer to
-                    duine felis enisa porta ridiculus nisl acequis.
-                  </p>
-                  <div class="tp-testimonial-two-qoute">
-                    <i class="fal fa-quote-left"></i>
-                  </div>
-                </div>
-                <div class="tp-testimonial-two position-relative swiper-slide">
-                  <div class="tp-testimonial-two-author mb-20">
-                    <div class="tp-testimonial-two-author-img">
-                      <img
-                        src="assets/img/testimonial/author-4.png"
-                        class="img-fluid"
-                        alt="img not found"
-                      />
-                    </div>
-                    <div class="tp-testimonial-two-author-text">
-                      <span>Senior Designer</span>
-                      <h4 class="tp-testimonial-two-name">Shane Watson</h4>
-                    </div>
-                  </div>
-                  <p>
-                    Hymenaeos rhoncus proin aliquam justo sum mauris rutrum
-                    nulam semper purus rutru non sociis libero varius cumer to
-                    duine felis enisa porta ridiculus nisl acequis.
-                  </p>
-                  <div class="tp-testimonial-two-qoute">
-                    <i class="fal fa-quote-left"></i>
-                  </div>
-                </div>
-                <div class="tp-testimonial-two position-relative swiper-slide">
-                  <div class="tp-testimonial-two-author mb-20">
-                    <div class="tp-testimonial-two-author-img">
-                      <img
-                        src="assets/img/testimonial/author-2.png"
-                        class="img-fluid"
-                        alt="img not found"
-                      />
-                    </div>
-                    <div class="tp-testimonial-two-author-text">
-                      <span>Senior Designer</span>
-                      <h4 class="tp-testimonial-two-name">Sumon Akhand</h4>
-                    </div>
-                  </div>
-                  <p>
-                    Hymenaeos rhoncus proin aliquam justo sum mauris rutrum
-                    nulam semper purus rutru non sociis libero varius cumer to
-                    duine felis enisa porta ridiculus nisl acequis.
-                  </p>
-                  <div class="tp-testimonial-two-qoute">
-                    <i class="fal fa-quote-left"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination-testimonial slide-dots"></div>
-          </div>
-        </div>
-      </section> -->
-      <!-- testimonial area end here -->
+<!-- Search Starts -->
 
-      <!-- choose area start here -->
-      <!-- <section class="tp-choose-area-three position-relative mt-120 pb-50">
-        <div class="tp-choose-area-three-img">
-          <img src="assets/img/about/about-img-5.jpg" alt="img-not-found" />
-          <div
-            class="tp-choose-three-year tp-choose-three-year-responsive mb-50"
-          >
-            <div class="tp-choose-three-year-inner">
-              <h3>20 Years</h3>
-              <h4>Succesfully <br />Provide Service</h4>
-            </div>
-          </div>
+<section class="tp-service-area-three pt-80 pb-200 bg-gray-light">
+  <div class="container">
+    <div class="row" >
+      <div class="col-12">
+        <div
+          class="section-title-wrapper text-center mb-55 wow fadeInUp"
+          data-wow-delay=".3s"
+        >
+          <h5 class="tp-section-subtitle-three mb-20">
+            - - Search For Services - -
+          </h5>
+          <h2 class="tp-section-title-two color-theme-blue">
+            Find Certified Vendors <br />For All Your Needs
+          </h2>
         </div>
-        <div class="container">
-          <div class="row align-items-end justify-content-center">
-            <div class="col-xl-6 text-end d-xl-block d-none">
-              <div class="tp-choose-three-year mb-50">
-                <div class="tp-choose-three-year-inner">
-                  <h3>20 Years</h3>
-                  <h4>Succesfully <br />Provide Service</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-10">
-              <div class="tp-choose-three">
-                <div class="section-title-wrapper mb-25">
-                  <h5 class="tp-section-subtitle-three mb-20">
-                    Why Choose Us - -
-                  </h5>
-                  <h2 class="tp-section-title-two color-theme-blue">
-                    Find Standard Cleaning <br />with Personal Touch
-                  </h2>
-                </div>
-                <p class="mb-45">
-                  Sed nteger porta vel placerat cra torquent dolor site
-                  habitasse elementum disign proin pulvinar class quam socis
-                  quam cum quisque ennim praesent anest amet fermentum proin
-                  donec massa augue in neque sapien
-                </p>
-                <div class="row mb-10">
-                  <div class="col-sm-6">
-                    <div class="tp-about-service mb-55">
-                      <div
-                        class="tp-about-service-icon yellow-circle-shape mb-20"
-                      >
-                        <i class="flaticon-delivery-box"></i>
-                      </div>
-                      <div class="tp-about-service-text">
-                        <h4 class="tp-about-service-text-title mb-15">
-                          <a href="service.html">Online Estimation</a>
-                        </h4>
-                        <p>
-                          Facilsis veicula hendrerit turp turpis solutat neique
-                          dapibus justo rdiculu dapibus no ridiculuy
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="tp-about-service mb-55">
-                      <div
-                        class="tp-about-service-icon yellow-circle-shape mb-20"
-                      >
-                        <i class="flaticon-gift-box"></i>
-                      </div>
-                      <div class="tp-about-service-text">
-                        <h4 class="tp-about-service-text-title mb-15">
-                          <a href="service.html">Project Discount</a>
-                        </h4>
-                        <p>
-                          Facilsis veicula hendrerit turp turpis solutat neique
-                          dapibus justo rdiculu dapibus no ridiculuy
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="tp-about-service mb-55">
-                      <div
-                        class="tp-about-service-icon yellow-circle-shape mb-20"
-                      >
-                        <i class="flaticon-video-camera"></i>
-                      </div>
-                      <div class="tp-about-service-text">
-                        <h4 class="tp-about-service-text-title mb-15">
-                          <a href="service.html">Work Monitoring</a>
-                        </h4>
-                        <p>
-                          Facilsis veicula hendrerit turp turpis solutat neique
-                          dapibus justo rdiculu dapibus no ridiculuy
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="tp-about-service mb-55">
-                      <div
-                        class="tp-about-service-icon yellow-circle-shape mb-20"
-                      >
-                        <i class="flaticon-snowfall"></i>
-                      </div>
-                      <div class="tp-about-service-text">
-                        <h4 class="tp-about-service-text-title mb-15">
-                          <a href="service.html">Satisfied Service</a>
-                        </h4>
-                        <p>
-                          Facilsis veicula hendrerit turp turpis solutat neique
-                          dapibus justo rdiculu dapibus no ridiculuy
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="row" id="how-we-work" style="display:flex;justify-content: center;padding-bottom: 2rem;">
+    
+      <div class="search-container" style="height: auto; overflow: hidden;">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+        </div>
+        <div class="search-container" >
+        <ul id="myUL">
+          <li><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Adele Sharma</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Ahmedabad </p>
+            <p> <i class="fa fa-trash" aria-hidden="true"> Dry Waste </i></p>  
+          </a></li> 
 
+          <li><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> John Sharma</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Surat </p>
+            <p> <i class="fa fa-trash" aria-hidden="true"> E-Waste </i></p>  
+          </a></li> 
+
+          <li><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Ahmed Mulla </p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Navsari </p>
+            <p> <i class="fa fa-trash" aria-hidden="true"> Industrial Waste </i></p>  
+          </a></li> 
+
+          <li><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Nirav Patel </p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Bilimora </p>
+            <p> <i class="fa fa-trash" aria-hidden="true"> Dry Waste </i></p>  
+          </a></li> 
+
+          <li><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Hitesh Gupta </p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Kosamba </p>
+            <p> <i class="fa fa-trash" aria-hidden="true"> Construction Waste </i></p>  
+          </a></li> 
+          
+        </ul>
+        
           </div>
-        </div>
-      </section> -->
-      <!-- choose area end here -->
+   
+    </div>
+  </div>
+</section>
+
+<!-- Search Ends -->
+
     </main>
 
     <footer class="theme-dark-bg2">
@@ -1078,6 +987,24 @@
     </footer>
 
     <!-- JS here -->
+    <script>
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
     <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.js"></script>
