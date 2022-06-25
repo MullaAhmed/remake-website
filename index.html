@@ -26,119 +26,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <style>
-  
-  @media (max-width: 1400px) 
-  {
-    #service{
-      display: none;
-          }
-    #how-we-work{
-      display:flex;
-      flex-direction: row;
-      overflow-x: auto;
-      flex-wrap: auto !important;
-    }
-    .row1 {
-    --bs-gutter-x: 30px;
-    --bs-gutter-y: 0;
-    display: flex;
-    /* flex-wrap: wrap; */
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x)/ -2);
-    margin-left: calc(var(--bs-gutter-x)/ -2)
-}
 
-.row1 > * {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x)/ 2);
-    padding-left: calc(var(--bs-gutter-x)/ 2);
-    margin-top: var(--bs-gutter-y)
-}
-  }
-
-  @media (min-width: 1400px) 
-  {
-  .row1 {
-    --bs-gutter-x: 30px;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x)/ -2);
-    margin-left: calc(var(--bs-gutter-x)/ -2)
-}}
-
-#myInput {
-font-size: 16px;
-padding: 1rem;
-border: 0px solid #ddd;
-margin-bottom: 12px;
-background-color: transparent;
-}
-
-#myUL {
-list-style-type: none;
-padding: 1rem;
-margin:0;
-}
-
-#myUL li a {
-
-margin-top: 1rem; /* Prevent double borders */  
-padding: 12px;
-width:25rem;
-text-decoration: none;
-font-size: 18px;
-color: black;
-display: flex;
-justify-content: space-around;
-}
-
-#myUL li{
-display: flex;
-border: 1px solid #ddd;
-justify-content: space-around;
-width:25rem;
-margin-top: 0.75rem;
-}
-
-#myUL li a:hover:not(.header) {
-background-color: #eee;
-}
-
-
-.search-container {
-  width: 80%;
-  height: auto;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow-y: auto;
-  overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.search-container:before {
-  content: "";
-
-
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  filter: blur(10px);
-  margin: -20px;
-}
-  
    </style>
   </head>
 
@@ -440,6 +328,73 @@ background-color: #eee;
         </div>
       </section>
       <!-- hero area end here -->
+
+      
+<!-- Search Starts -->
+
+<section class="tp-service-area-three pt-80 pb-200 bg-gray-light">
+  <div class="container">
+    <div class="row" >
+      <div class="col-12">
+        <div
+          class="section-title-wrapper text-center mb-55 wow fadeInUp"
+          data-wow-delay=".3s"
+        >
+          <h5 class="tp-section-subtitle-three mb-20">
+            - - Search For Services - -
+          </h5>
+          <h2 class="tp-section-title-two color-theme-blue">
+            Find Certified Vendors <br />For All Your Needs
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="how-we-work" style="display:flex;justify-content: center;padding-bottom: 2rem;">
+    
+      <div class="search-container" style="height: auto; overflow: hidden;">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+        </div>
+        <div class="search-container" >
+        <ul id="myUL">
+          <li><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Adele Sharma</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Ahmedabad </p>
+            <p> <i  id="waste-type" class="fa fa-trash"  aria-hidden="true"> Dry Waste </i></p>  
+          </a></li> 
+
+          <li><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> John Sharma</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Surat </p>
+            <p> <i  id="waste-type" class="fa fa-trash"  aria-hidden="true"> E-Waste </i></p>  
+          </a></li> 
+
+          <li><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Ahmed Mulla </p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Navsari </p>
+            <p> <i  id="waste-type" class="fa fa-trash"  aria-hidden="true"> Industrial Waste </i></p>  
+          </a></li> 
+
+          <li style="display:none"><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Nirav Patel </p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Bilimora </p>
+            <p> <i  id="waste-type" class="fa fa-trash"  aria-hidden="true"> Dry Waste </i></p>  
+          </a></li> 
+
+          <li style="display:none"><a href="tel:+919971731414"> 
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Hitesh Gupta </p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Kosamba </p>
+            <p> <i  id="waste-type" class="fa fa-trash"  aria-hidden="true"> Construction Waste </i></p>  
+          </a></li> 
+          
+        </ul>
+        
+          </div>
+   
+    </div>
+  </div>
+</section>
+
+<!-- Search Ends -->
 
       <!-- feature area start here -->
       <section class="tp-feature-area-three pt-115 pb-80" >
@@ -808,78 +763,39 @@ background-color: #eee;
                     >
                   </div>
                 </div>
-              </div>
+               </div>
             </div>
           </div>
+          <style>
+
+@media (min-width: 1000px){
+  .dots{
+    display:None;}
+}
+@media (max-width: 1000px){
+            .dots{
+              display:flex;
+              justify-content:center;
+              padding: 1rem;
+            }
+            .dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}}
+
+          </style>
+          <div class="dots">
+            <span class="dot"></span> &nbsp;
+            <span class="dot"></span> &nbsp;
+            <span class="dot"></span> &nbsp;
+            <span class="dot"></span></div>
         </div>
       </section>
       <!-- service area end here -->
 
-<!-- Search Starts -->
-
-<section class="tp-service-area-three pt-80 pb-200 bg-gray-light">
-  <div class="container">
-    <div class="row" >
-      <div class="col-12">
-        <div
-          class="section-title-wrapper text-center mb-55 wow fadeInUp"
-          data-wow-delay=".3s"
-        >
-          <h5 class="tp-section-subtitle-three mb-20">
-            - - Search For Services - -
-          </h5>
-          <h2 class="tp-section-title-two color-theme-blue">
-            Find Certified Vendors <br />For All Your Needs
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="row" id="how-we-work" style="display:flex;justify-content: center;padding-bottom: 2rem;">
-    
-      <div class="search-container" style="height: auto; overflow: hidden;">
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-        </div>
-        <div class="search-container" >
-        <ul id="myUL">
-          <li><a href="tel:+919971731414"> 
-            <p><i class="fa fa-phone" aria-hidden="true"></i> Adele Sharma</p>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Ahmedabad </p>
-            <p> <i class="fa fa-trash" aria-hidden="true"> Dry Waste </i></p>  
-          </a></li> 
-
-          <li><a href="tel:+919971731414"> 
-            <p><i class="fa fa-phone" aria-hidden="true"></i> John Sharma</p>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Surat </p>
-            <p> <i class="fa fa-trash" aria-hidden="true"> E-Waste </i></p>  
-          </a></li> 
-
-          <li><a href="tel:+919971731414"> 
-            <p><i class="fa fa-phone" aria-hidden="true"></i> Ahmed Mulla </p>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Navsari </p>
-            <p> <i class="fa fa-trash" aria-hidden="true"> Industrial Waste </i></p>  
-          </a></li> 
-
-          <li><a href="tel:+919971731414"> 
-            <p><i class="fa fa-phone" aria-hidden="true"></i> Nirav Patel </p>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Bilimora </p>
-            <p> <i class="fa fa-trash" aria-hidden="true"> Dry Waste </i></p>  
-          </a></li> 
-
-          <li><a href="tel:+919971731414"> 
-            <p><i class="fa fa-phone" aria-hidden="true"></i> Hitesh Gupta </p>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Kosamba </p>
-            <p> <i class="fa fa-trash" aria-hidden="true"> Construction Waste </i></p>  
-          </a></li> 
-          
-        </ul>
-        
-          </div>
-   
-    </div>
-  </div>
-</section>
-
-<!-- Search Ends -->
 
     </main>
 

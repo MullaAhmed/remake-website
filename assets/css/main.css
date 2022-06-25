@@ -323,6 +323,133 @@ select {
   color: #06ae5a !important;
 }
 
+
+@media (max-width: 1400px) 
+{
+  #service{
+    display: none;
+        }
+  #how-we-work{
+    display:flex;
+    flex-direction: row;
+    overflow-x: auto;
+    flex-wrap: auto !important;
+  }
+  .row1 {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2)
+}
+
+.row1 > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)/ 2);
+  padding-left: calc(var(--bs-gutter-x)/ 2);
+  margin-top: var(--bs-gutter-y)
+}
+}
+
+@media (min-width: 1400px) 
+{
+.row1 {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2)
+}}
+
+@media (max-width: 1000px) {
+#waste-type{
+display:none;
+}
+#myUL li a {
+padding-left:3rem !important;
+}
+}
+
+#myInput {
+font-size: 16px;
+padding: 1rem;
+border: 0px solid #ddd;
+margin-bottom: 12px;
+background-color: transparent;
+}
+
+#myUL {
+list-style-type: none;
+padding: 1rem;
+margin:0;
+}
+
+#myUL li a {
+
+margin-top: 1rem; /* Prevent double borders */  
+padding: 12px;
+width:25rem;
+text-decoration: none;
+font-size: 18px;
+color: black;
+display: flex;
+justify-content: space-around;
+}
+
+#myUL li a p {
+
+font-size: 1rem;
+}
+
+#myUL li{
+display: flex;
+border: 1px solid #ddd;
+justify-content: space-around;
+width:25rem;
+margin-top: 0.75rem;
+}
+
+#myUL li a:hover:not(.header) {
+background-color: #eee;
+}
+
+
+.search-container {
+width: 80%;
+height: auto;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+border-radius: 5px;
+position: relative;
+z-index: 1;
+background: inherit;
+overflow-y: auto;
+overflow-x: hidden;
+display: flex;
+justify-content: center;
+}
+
+.search-container:before {
+content: "";
+
+
+position: absolute;
+background: inherit;
+z-index: -1;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+filter: blur(10px);
+margin: -20px;
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/
