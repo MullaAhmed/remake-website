@@ -381,6 +381,8 @@ padding-left:3rem !important;
 #myInput {
 font-size: 16px;
 padding: 1rem;
+width:20rem;
+text-align: center;
 border: 0px solid #ddd;
 margin-bottom: 12px;
 background-color: transparent;
