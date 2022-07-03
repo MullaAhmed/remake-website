@@ -2175,7 +2175,7 @@ margin: -20px;
   font-size: 17px;
   font-weight: 500;
   color: #064e2a;
-  display: block;
+  /* display: block; */
   position: relative;
   z-index: 1;
   line-height: 1;
@@ -2568,7 +2568,8 @@ margin: -20px;
   margin-right: 35px;
 }
 .tp-main-menu-three ul li a {
-  color: #102579;
+  color: #ffffff;
+  
   padding: 41px 0px;
 }
 .tp-main-menu-three ul li a::before {
