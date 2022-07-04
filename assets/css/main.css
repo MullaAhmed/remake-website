@@ -2371,7 +2371,7 @@ margin: -20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-header-area-two {
-    background: #ffffff;
+    background: #042d63;
   }
 }
 
@@ -2533,11 +2533,11 @@ margin: -20px;
   padding: 0px 34px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-header-area-three {
     padding: 15px 0px;
   }
-}
+} */
 
 .tp-header-area-three.header-sticky.sticky-menu {
   position: fixed;
